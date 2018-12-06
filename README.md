@@ -77,4 +77,3 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [link-travis]: https://travis-ci.org/kidfund/monkey-patcher.svg
 [link-downloads]: https://packagist.org/packages/kidfund/monkey-patcher.svg
 [link-author]: https://github.com/timbroder
-[link-contributors]: ../../contributors
