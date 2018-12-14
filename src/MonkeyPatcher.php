@@ -31,7 +31,7 @@ trait MonkeyPatcher
      * @return mixed Method return.
      * @throws \ReflectionException
      */
-    public function invokeMethod(&$object, $methodName, array $parameters = [])
+    public function invokeMethod(&$object, string $methodName, array $parameters = [])
     {
         $reflection = new ReflectionClass(get_class($object));
 
@@ -46,12 +46,12 @@ trait MonkeyPatcher
      * Set protected/private property of a class
      *
      * @param $object
-     * @param $propertyName
+     * @param string $propertyName
      * @param $value
      *
      * @throws \ReflectionException
      */
-    public function setProperty(&$object, $propertyName, $value)
+    public function setProperty(&$object, string $propertyName, $value)
     {
         $reflection = new ReflectionClass(get_class($object));
 
@@ -66,12 +66,12 @@ trait MonkeyPatcher
      * Get protected/private property of a class
      *
      * @param $object
-     * @param $propertyName
+     * @param string $propertyName
      *
      * @return mixed
      * @throws \ReflectionException
      */
-    public function getProperty(&$object, $propertyName)
+    public function getProperty(&$object, string $propertyName)
     {
         $reflection = new ReflectionClass(get_class($object));
 

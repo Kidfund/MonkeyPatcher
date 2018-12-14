@@ -1,6 +1,7 @@
 <?php
 
 use classes\PrivateClass;
+use PHPUnit\Framework\TestCase;
 use Kidfund\MonkeyPatcher\MonkeyPatcher;
 
 /**
@@ -9,7 +10,7 @@ use Kidfund\MonkeyPatcher\MonkeyPatcher;
  */
 
 
-class MonkeyPatcherUnitTest extends PHPUnit_Framework_TestCase
+class MonkeyPatcherUnitTest extends TestCase
 {
     use MonkeyPatcher;
 

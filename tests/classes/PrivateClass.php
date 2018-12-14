@@ -16,30 +16,30 @@ class PrivateClass
     /**
      * PrivateClass constructor.
      *
-     * @param null $property
+     * @param string|null $property
      */
-    public function __construct($property = null)
+    public function __construct(string $property = null)
     {
         $this->property = $property;
     }
 
     /**
-     * @param $one
+     * @param string $one
      *
-     * @return mixed
+     * @return string
      */
-    private function singleParam($one)
+    private function singleParam(string $one) : string
     {
         return $one;
     }
 
     /**
-     * @param $one
-     * @param $two
+     * @param string $one
+     * @param string $two
      *
-     * @return array
+     * @return string
      */
-    private function doubleParam($one, $two)
+    private function doubleParam(string $one, string $two) : string
     {
         return $two;
     }
