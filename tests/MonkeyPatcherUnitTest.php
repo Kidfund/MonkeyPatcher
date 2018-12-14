@@ -8,8 +8,6 @@ use Kidfund\MonkeyPatcher\MonkeyPatcher;
  * @author    : timbroder
  * @copyright 2015 Kidfund Inc
  */
-
-
 class MonkeyPatcherUnitTest extends TestCase
 {
     use MonkeyPatcher;

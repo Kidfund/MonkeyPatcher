@@ -12,8 +12,7 @@ use ReflectionMethod;
 use ReflectionProperty;
 
 /**
- * Trait MonkeyPatcher
- * @package Kidfund\MonkeyPatcher
+ * Trait MonkeyPatcher.
  */
 trait MonkeyPatcher
 {
@@ -43,7 +42,7 @@ trait MonkeyPatcher
     }
 
     /**
-     * Set protected/private property of a class
+     * Set protected/private property of a class.
      *
      * @param $object
      * @param string $propertyName
@@ -63,7 +62,7 @@ trait MonkeyPatcher
     }
 
     /**
-     * Get protected/private property of a class
+     * Get protected/private property of a class.
      *
      * @param $object
      * @param string $propertyName
