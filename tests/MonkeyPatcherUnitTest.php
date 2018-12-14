@@ -1,8 +1,8 @@
 <?php
 
 use classes\PrivateClass;
-use Kidfund\MonkeyPatcher\MonkeyPatcher;
 use PHPUnit\Framework\TestCase;
+use Kidfund\MonkeyPatcher\MonkeyPatcher;
 
 /**
  * @author    : timbroder
