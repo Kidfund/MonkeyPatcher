@@ -8,7 +8,20 @@
 
 Access private functions and properties of PHP classes. Primarily used to muck with things under test.
 
-## Install
+   * [MonkeyPatcher](#monkeypatcher)
+   * [Install](#install)
+   * [Usage](#usage)
+      * [Setup](#setup)
+      * [Access a private function](#access-a-private-function)
+      * [Set a private property](#set-a-private-property)
+      * [Get a private property](#get-a-private-property)
+   * [Testing](#testing)
+   * [Contributing](#contributing)
+   * [Credits](#credits)
+   * [License](#license)
+
+
+# Install
 
 Via Composer
 
@@ -16,11 +29,11 @@ Via Composer
 $ composer require kidfund/monkey-patcher
 ```
 
-## Usage
+# Usage
 
 *Note: If you are using this, you may have a broken pattern somewhere. Either in your main code or in test-land. But, sometimes you need it!*
 
-### Setup
+## Setup
 
 Add the trait to your test
 
@@ -30,42 +43,42 @@ class MonkeyPatcherUnitTest extends PHPUnit_Framework_TestCase
     use MonkeyPatcher;
 ```
 
-### Access a private function
+## Access a private function
 
 ```php
 $this->invokeMethod($object, 'do', ['something']);
 
 ```
 
-### Set a private property
+## Set a private property
 
 ```php
 $this->setProperty($object, 'msg', 'hello');
 
 ```
 
-### Get a private property
+## Get a private property
 
 ```php
 $this->getProperty($object, 'msg');
 
 ```
 
-## Testing
+# Testing
 
 ``` bash
 $ ./vendor/bin/phpunit
 ```
 
-## Contributing
+# Contributing
 
 Please see [CONTRIBUTING](CONTRIBUTING.md) and [CONDUCT](CONDUCT.md) for details.
 
-## Credits
+# Credits
 
 - [@timborder][link-author]
 
-## License
+# License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
