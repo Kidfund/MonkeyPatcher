@@ -14,7 +14,7 @@ class MonkeyPatcherUnitTest extends TestCase
 
     protected $class;
 
-    public function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
 
